@@ -1,16 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 31 17:11:00 2020
-
-@author: PKSA
-"""
 
 import pandas as pd
 
 
 
 
-# Reading Sample file for basin
+# Reading Sample file for each basin
 pcp=pd.read_csv("E:\\Adnan\\GridModel\\CC INPUT SWAT-v2\\CC INPUT SWAT\\Baram\\CCSM4\\4.5\\pcp1.pcp")
 tmp=pd.read_csv("E:\\Adnan\\GridModel\\CC INPUT SWAT-v2\\CC INPUT SWAT\\Baram\\CCSM4\\4.5\\Tmp1.Tmp")
 
@@ -32,6 +26,8 @@ tmpstations[0]=tmpstations[0].split(" ")[-1]
 #Replace with 
 #pcp.iloc[3:,0:1] 
 file=pcpstations[0]
+
+#
 pcppath="E:\\CC_DATA\\missvaluecorected_v2\\pcporginal\\pcp\\CCSM4\\CCSM4_RCP4.5\\"
 
 
